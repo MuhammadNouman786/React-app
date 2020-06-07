@@ -31,11 +31,10 @@ jobs:
     - uses: borales/actions-yarn@v2.0.0
       with:
           cmd: install # will run `yarn install` command
-    - uses: borales/actions-yarn@v2.0.0
       
     - name: Install surge
       run: npm install -g surge
     - name: Run Surge
-      run: surge ./ reactapp.surge.sh --token ${{ secrets.SURGE_TOKEN }}  
+      run: surge ./ reactapp1234.surge.sh --token ${{ secrets.SURGE_TOKEN }}  
        
 
